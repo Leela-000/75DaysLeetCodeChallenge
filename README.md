@@ -72,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/Leela-000/75DaysLeetCodeChallenge/tree/master/0242-valid-anagram) |
 | [0977-squares-of-a-sorted-array](https://github.com/Leela-000/75DaysLeetCodeChallenge/tree/master/0977-squares-of-a-sorted-array) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Leela-000/75DaysLeetCodeChallenge/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
+| [3536-maximum-product-of-two-digits](https://github.com/Leela-000/75DaysLeetCodeChallenge/tree/master/3536-maximum-product-of-two-digits) |
 ## String
 |  |
 | ------- |
@@ -173,6 +174,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/Leela-000/75DaysLeetCodeChallenge/tree/master/0150-evaluate-reverse-polish-notation) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/Leela-000/75DaysLeetCodeChallenge/tree/master/3513-number-of-unique-xor-triplets-i) |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Leela-000/75DaysLeetCodeChallenge/tree/master/3514-number-of-unique-xor-triplets-ii) |
+| [3536-maximum-product-of-two-digits](https://github.com/Leela-000/75DaysLeetCodeChallenge/tree/master/3536-maximum-product-of-two-digits) |
 ## Monotonic Stack
 |  |
 | ------- |
