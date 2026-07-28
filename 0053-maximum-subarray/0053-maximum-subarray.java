@@ -12,6 +12,9 @@ class Solution {
                 sum=0;
             }
         }
+        // if(max<0){
+        //     return 0;
+        // }
         return (int)max;
     }
 }
