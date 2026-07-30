@@ -1,29 +1,40 @@
 class Solution {
-    public static void merge(int[] nums1, int m, int[] nums2, int n) {
-       int i=0;
-       for(int digit:nums2){
-        nums1[m+i]=digit;
-        i++;
-       } 
-       Arrays.sort(nums1);
-       for(int res:nums1){
-        System.out.print(res+" ");
-       }
-       System.out.println();
-    }
-    public static void main(String[] args){
-        Scanner scn=new Scanner(System.in);
-        int m=scn.nextInt();
-        int n=scn.nextInt();
-        int nums1[]=new int[m+n];
-        int nums2[]=new int[n];
-        for(int i=0;i<m;i++){
-            nums1[i]=scn.nextInt();
+   public static void swap(int[] nums1, int i, int[] nums2, int j){
+        int t=nums1[i];
+        nums1[i]=nums2[j];
+        nums2[j]=t;
+   }
+    public static void merge(int[] nums1, int n, int[] nums2, int m) {
+      int len=(n+m);
+      int gap=(len/2)+(len%2); 
+      while(gap>0){
+        int left=0,right=left+gap;
+        while(right<len){
+        //arr1 with arr2
+        if(left<n && right>=n){
+            if(nums1[left]>nums2[right-n]){
+                swap(nums1,left,nums2,right-n);
+            }
         }
-        for(int i=0;i<n;i++){
-            nums2[i]=scn.nextInt();
+        //arr2 with arr2
+        else if(left>=n){
+            if(nums2[left-n]>nums2[right-n]){
+                swap(nums2,left-n,nums2,right-n);
+            }
         }
-        merge(nums1,m,nums2,n);
-        
+        else {
+            if(nums1[left]>nums1[right]){
+                swap(nums1,left,nums1,right);
+            }
+
+        }
+        left++; right++;
+        }
+            if(gap==1)break;
+            gap=(gap/2)+(gap%2);
+      }
+       for(int i = 0; i < m; i++){
+            nums1[n + i] = nums2[i];
+        }
     }
 }
