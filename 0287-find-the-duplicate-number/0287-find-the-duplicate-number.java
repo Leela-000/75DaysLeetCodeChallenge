@@ -7,13 +7,16 @@ class Solution {
         if(len==1){
             return nums[0];
         }
-        HashMap<Integer,Integer> map=new HashMap<>();
-        for(int num:nums){
-            if(map.containsKey(num)){
-                return num;
-            }
-            map.put(num,1);
+        int slow=nums[0],fast=nums[0];
+      do{
+            slow=nums[slow];
+            fast=nums[nums[fast]];
+        }while(slow!=fast);
+        fast=nums[0];
+        while(slow!=fast){
+            slow=nums[slow];
+            fast=nums[fast];
         }
-        return -1;
+        return slow;
     }
 }
