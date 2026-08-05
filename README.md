@@ -381,4 +381,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3310-remove-methods-from-project](https://github.com/Leela-000/75DaysLeetCodeChallenge/tree/master/3310-remove-methods-from-project) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/Leela-000/75DaysLeetCodeChallenge/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
