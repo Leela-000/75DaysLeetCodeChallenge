@@ -1,23 +1,25 @@
 class Solution {
-    public boolean searchMatrix(int[][] arr, int target) {
-        int n=arr.length;
-        int m=arr[0].length;
-        int low=0,high=m*n-1;
+    public boolean searchMatrix(int[][] a, int k) {
+        int low=0, high=a.length*a[0].length-1;
+        int n=a.length;
+        int m=a[0].length;
         while(low<=high){
-            int mid=low+(high-low)/2;
+            int mid=(low+high)/2;
             int row=mid/m;
             int col=mid%m;
-            if(arr[row][col]==target){
+
+            if(a[row][col]==k){
                 return true;
             }
-            else if(arr[row][col]<target){
+            else if(a[row][col]<k){
                 low=mid+1;
             }
             else{
                 high=mid-1;
             }
-            }
-            return false;
+            
+        }
+        return false;
 
     }
 }
