@@ -14,6 +14,15 @@ class Solution {
                 count--;
             }
         }
-        return ele;
+        int count1=0;
+        for(int num:nums){
+            if(num==ele){
+                count1++;
+            }
+        }
+        if(count1>(nums.length/2)){
+            return ele;
+        }
+        return -1;
     }
 }
