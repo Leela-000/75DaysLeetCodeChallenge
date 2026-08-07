@@ -8,7 +8,7 @@ class Solution {
         return (sum%m==0);
     }
     public int smallestNumber(int n, int t) {
-        for(int i=0;i<=t;i++){
+        for(int i=0;i<=n+10;i++){
             if(isDiv(n+(i),t)){
                 return n+(i);
             }
